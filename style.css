@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Inter:wght@400;500;600&display=swap");
+
+:root {
+  --teal-900: #0b4f61;
+  --teal-700: #0d7a93;
+  --blue-500: #1e9fd1;
+  --blue-200: #bfe3f4;
+  --orange-500: #f2994a;
+  --orange-100: #fde3cb;
+  --navy-900: #132433;
+  --navy-600: #4d6373;
+  --bg: #eff5f8;
+  --card: #ffffff;
+  --line: #e1edf1;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  min-height: 100vh;
+  background: var(--bg);
+  font-family: "Inter", sans-serif;
+  color: var(--navy-900);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 48px 24px;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  background-color: var(--card);
+  padding: 40px 48px 44px;
+  border-radius: 20px;
+  box-shadow: 0 30px 60px -25px rgba(11, 79, 97, 0.25);
+  border: 1px solid var(--line);
+}
+
+/* ---------- Cabeçalho de marca (igual ao resto do portal) ---------- */
+.brand-header {
+  margin-bottom: 28px;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--teal-700);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 13px;
+  margin-bottom: 14px;
+}
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.brand-header .eyebrow {
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  font-size: 15px;
+  color: var(--teal-700);
+  letter-spacing: 0.3px;
+}
+.brand-header .eyebrow span {
+  color: var(--orange-500);
+}
+
+.title {
+  font-family: "Manrope", sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--navy-900);
+  margin-top: 4px;
+}
+
+/* ---------- Formulário ---------- */
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px 20px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.field-full {
+  grid-column: 1 / -1;
+}
+
+label {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--navy-600);
+  margin-bottom: 6px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px 14px;
+  margin-bottom: 12px;
+  border: 1px solid #d7e3e9;
+  border-radius: 10px;
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  color: var(--navy-900);
+  outline: none;
+  background: #fbfdfe;
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--blue-500);
+  box-shadow: 0 0 0 3px rgba(30, 159, 209, 0.15);
+  background: #fff;
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* Campos que aparecem condicionalmente (motivo de urgência, etc.) */
+.escondido {
+  display: none;
+}
+
+/* ---------- Botão de enviar ---------- */
+.enviar {
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--teal-700), var(--blue-500));
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 8px 16px -8px rgba(13, 122, 147, 0.55);
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    filter 0.15s ease;
+  margin-top: 6px;
+}
+.enviar:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.06);
+  box-shadow: 0 14px 22px -10px rgba(13, 122, 147, 0.65);
+}
+.enviar:active {
+  transform: translateY(0);
+}
+.enviar:focus-visible {
+  outline: 3px solid var(--orange-500);
+  outline-offset: 2px;
+}
+
+@media (max-width: 640px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+  .container {
+    padding: 30px 24px 34px;
+  }
+  .title {
+    font-size: 23px;
+  }
+}

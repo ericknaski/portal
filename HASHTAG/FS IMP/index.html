@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elementos</title>
+  </head>
+  <body>
+    <h1>Olá, mundo!</h1>
+
+    <!-- 's' e 'p' tem uma semântica diferente -->
+    <p id="paragrafo-inicio">parágrafo</p>
+    <p>parágrafo</p>
+
+    <span>tag span</span>
+    <span>tag span</span>
+
+    <h2>texto h2</h2>
+    <h3>texto h3</h3>
+    <h4>texto h4</h4>
+    <h5>texto h5</h5>
+    <h6>texto h6</h6>
+
+    <!-- 'b' e 'strong' tem uma semântica diferente, o último é realmente importante -->
+    <!-- 'i' e 'em' tem uma semântica diferente, o último é realmente importante -->
+    <p>
+      usando <b>span</b> dentro <strong>do</strong>
+      <span>
+        parágrafo para <i>teste</i> em diferentes
+        <em>textos</em>
+      </span>
+    </p>
+
+    <code>exportar pandas</code>
+
+    <blockquote>esse é um texto utilizando o <i>blockquote</i></blockquote>
+
+    <!-- hr serve para criar uma linha -->
+    <!-- br serve para criar um parágrafro -->
+    <!-- sup serve para elevar um texto -->
+    <!-- br serve para descer um texto -->
+    <hr />
+    <p>
+      estou escrevendo um <sup>texto</sup> para <sub>testar</sub> o parágrafo
+      <br />
+      dei um parágrafo
+    </p>
+
+    <!-- criando listas - ol: ordenada / ul: não ordenada / dl: lista descritiva-->
+    <ol>
+      <li>item</li>
+      <li>item</li>
+      <li>item</li>
+      <li>item</li>
+      <li>item</li>
+      <li>item</li>
+    </ol>
+
+    <ul>
+      <li>item</li>
+      <li>item</li>
+      <li>item</li>
+      <li>item</li>
+      <li>item</li>
+    </ul>
+
+    <dl>
+      <dt>Heading Tag</dt>
+      <dd>É uma tag <b>usada</b> para criar títulos</dd>
+    </dl>
+
+    <!-- criando hiperlinks - externos e internos / há um atributo dentro da tag-->
+    <a
+      href="https://portal.hashtagtreinamentos.com/lessons?lessonId=7384&courseId=12990&courseName=Full+Stack+Impressionador&lessonType=lesson_theory"
+      target="_blank"
+      >Hashtag</a
+    >
+    <br />
+    <a href="#paragrafo-inicio" target="_self">lista</a>
+  </body>
+</html>

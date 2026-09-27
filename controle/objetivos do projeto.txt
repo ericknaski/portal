@@ -16,3 +16,19 @@ Ter algo que tenha mais logística e dinâmica no nosso dia a dia, que possa col
 4 - QUEM PODE EXCLUIR INFORMAÇÃOES?
 
 Programadores da Pré-operação
+
+5 - REQUISITOS FUNCIONAIS
+
+RF01: cadastrar manobras
+RF02: editar manobras
+RF03: excluir manobras
+RF04: consultar manobras
+RF05: visualizar manobras
+
+6 - REQUISITOS NÃO FUNCIONAIS
+
+RNF01 - sistema com autenticação
+RFN02 - tempo rápido de resposta
+RFN03 - dados com backup periódico
+RFN04 - apenas usuários autorizados podem acessar
+RFN05 - sistema responsivo

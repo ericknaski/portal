@@ -27,8 +27,12 @@ RF05: visualizar manobras
 
 6 - REQUISITOS NÃO FUNCIONAIS
 
-RNF01 - sistema com autenticação
-RFN02 - tempo rápido de resposta
-RFN03 - dados com backup periódico
-RFN04 - apenas usuários autorizados podem acessar
-RFN05 - sistema responsivo
+RNF01: sistema com autenticação
+RFN02: tempo rápido de resposta
+RFN03: dados com backup periódico
+RFN04: apenas usuários autorizados podem acessar
+RFN05: sistema responsivo
+
+7 - REGRAS DE NEGÓCIO
+
+RN01: um login por pessoa

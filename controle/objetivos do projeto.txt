@@ -1,0 +1,18 @@
+CONTROLE DE SP
+
+
+1 - QUAIS NECESSIDADES O SISTEMA VAI SUPRIR?
+
+O sistema será utilizado para o controle de SP's programadas (vindo a substituir uma planilha). Nele deve haver campos com: SP, data SP, WR, data WR, data programação. regional, login, etc. A ideia é acrescentar um calendário e um mapa para o acompanhamento desses dados de forma mais visual, assim como gráficos com Kpi's.
+
+2 - QUEM VAI USAR O SISTEMA?
+
+Programadores da Pré-operação e algumas pessoas da COEQ
+
+3 - QUAL É O MAIOR PROBLEMA HOJE?
+
+Ter algo que tenha mais logística e dinâmica no nosso dia a dia, que possa coletar dados de uma forma mais visualmente agradável e eficiente.
+
+4 - QUEM PODE EXCLUIR INFORMAÇÃOES?
+
+Programadores da Pré-operação
